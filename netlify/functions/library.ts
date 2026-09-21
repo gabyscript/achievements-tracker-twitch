@@ -27,7 +27,8 @@ export default async (req:Request) => {
         appid: g.appid,
         name: g.name,
         coverUrl: `https://cdn.cloudflare.steamstatic.com/steam/apps/${g.appid}/header.jpg`,
-      }));
+      }))
+      .sort((a,b) => a.name.localeCompare(b.name));
 
       return Response.json(library);
   } catch (e) {
