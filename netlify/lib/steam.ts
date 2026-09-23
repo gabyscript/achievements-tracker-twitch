@@ -28,6 +28,7 @@ export function achievementsUrl(appId: number) {
     steamid: steamId(),
     appid: String(appId),
     format: "json",
+    _t: String(Date.now()),
   });
   return `${BASE}/ISteamUserStats/GetPlayerAchievements/v0001/?${params}`;
 }

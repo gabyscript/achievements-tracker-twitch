@@ -15,7 +15,7 @@ export default function Overlay() {
   const demo = params.get("demo") === "1";
   const demoStep = clamp(Number(params.get("demoStep")) || 1, 1, 10_000);
   // En demo se permiten refrescos más rápidos para ver el avance al momento.
-  const interval = clamp(Number(params.get("interval")) || 60, demo ? 5 : 30, 300);
+  const interval = clamp(Number(params.get("interval")) || 120, demo ? 5 : 30, 300);
   const appidValid = Number.isInteger(appid) && appid > 0;
 
   const [data, setData] = useState<AchievementProgress | null>(null);

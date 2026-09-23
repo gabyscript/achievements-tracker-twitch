@@ -44,7 +44,7 @@ export default async (req: Request) => {
   let failure: { error: string; status: number } | null = null;
 
   try {
-    const response = await fetch(achievementsUrl(appid));
+    const response = await fetch(achievementsUrl(appid), { cache: "no-store" });
 
     if (!response.ok) {
       failure = { error: `Steam respondió ${response.status}`, status: 502 };

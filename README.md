@@ -63,7 +63,7 @@ logros por la API.
 | Parámetro | Por defecto | Qué hace |
 |---|---|---|
 | `appid` | — | Obligatorio. El id del juego en Steam. |
-| `interval` | `60` | Segundos entre refrescos. Rango 30–300 (en modo demo, desde 5). |
+| `interval` | `120` | Segundos entre refrescos. Rango 30–300 (en modo demo, desde 5). |
 | `debug` | apagado | Muestra los errores y la hora del último refresco en pantalla. Sin esto, si algo falla el overlay queda invisible. |
 | `demo` | apagado | Hace subir el contador solo. Ver [Modo demo](#modo-demo). |
 | `demoStep` | `1` | Logros que suma el demo en cada refresco. |

@@ -105,7 +105,7 @@ export default function Home() {
             <dl className="mt-4 space-y-1 border-t border-zinc-800 pt-3 text-xs text-zinc-500">
               <div className="flex gap-2">
                 <dt className="w-28 shrink-0 font-mono text-zinc-400">&amp;interval=30</dt>
-                <dd>segundos entre refrescos: 30–300, por defecto 60 (en demo, desde 5)</dd>
+                <dd>segundos entre refrescos: 30–300, por defecto 120 (en demo, desde 5)</dd>
               </div>
               <div className="flex gap-2">
                 <dt className="w-28 shrink-0 font-mono text-zinc-400">&amp;debug=1</dt>
