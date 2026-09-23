@@ -7,7 +7,11 @@
   command = "npm run dev"
   targetPort = 5173
 
+# La SPA solo tiene dos rutas: "/" la sirve index.html directamente y "/overlay"
+# necesita fallback. Un catch-all "/*" NO sirve aquí: netlify dev lo aplicaria
+# tambien a los modulos internos de Vite (/src/*, /@vite/*), que volverian como
+# text/html y el navegador se negaria a ejecutarlos.
 [[redirects]]
-  from = "/*"
+  from = "/overlay"
   to = "/index.html"
   status = 200

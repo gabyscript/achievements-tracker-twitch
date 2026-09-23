@@ -4,6 +4,7 @@ export interface AchievementProgress {
   unlocked: number;
   total: number;
   percent: number;
+  demo?: boolean;
 }
 
 export interface SteamOwnedGame {
